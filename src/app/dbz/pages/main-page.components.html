@@ -1,0 +1,14 @@
+
+<h3>DBZ  Personajes</h3>
+<hr>
+<div class="row">
+  <div class="col">
+        <app-dbz-lista [characterList]="characeres"  (onDelete)="onDeleterCharacter($event)" ></app-dbz-lista>
+  </div>
+<!--[characterList]="characeres, donde characceres es traido del get que se encuentra en el costructor-->
+
+<div class="col">
+<app-dbz-add-character (onNewCharacter)="onNewCharacter($event)"></app-dbz-add-character><!-- $event nos permite resibir el caracter enviado-->
+</div>
+</div>
+
